@@ -1,2 +1,2 @@
 # cgyoga
-Chhattisgarh Pream Niranjan Yogasan Khel Sangh
+Chhattisgarh Yoga Scoring System
