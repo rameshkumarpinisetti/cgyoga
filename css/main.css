@@ -580,6 +580,9 @@ header .border-img {
     border-radius: 50%;
     background-color: #ddd;
     content: "";
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .circle.event-1:after{
