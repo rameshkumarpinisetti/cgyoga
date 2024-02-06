@@ -580,7 +580,16 @@ header .border-img {
     border-radius: 50%;
     background-color: #ddd;
     content: "";
-    background-image: url("../images/about-1.jpg");
+}
+
+.circle.event-1:after{
+    background-image: url("../images/png/e-1.png");
+}
+.circle.event-2:after{
+    background-image: url("../images/png/e-2.png");
+}
+.circle.event-3:after{
+    background-image: url("../images/png/e-3.png");
 }
 
 .circle__inner {
