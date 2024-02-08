@@ -1,405 +1,299 @@
-<!doctype html>
-<html lang="en">
-
+<!DOCTYPE html>
+<html lang="en" >
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <title>Yoga</title>
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800|Old+Standard+TT:400,400i,700" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/main.css">
+  <meta charset="UTF-8">
+  <title>CodePen - Bootstrap Coming Soon Page</title>
+  <!-- <link rel="stylesheet" href="./style.css"> -->
+  <style>
+    body{
+    background: url('https://i.ibb.co/pbNgdqj/bg.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:top;
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+}
 
+/* Logo */  
+.header_area img{
+    width: 200px;
+    margin-top: 0px;
+}
+
+/* Body Content */  
+.tagline h1{
+    font-family: 'Roboto Serif', serif;
+    font-weight: 700;
+    border-top: 1px solid #00dcff;
+    border-bottom: 1px solid #00dcff;
+    width: 50%;
+    margin: 0 auto;
+    color: #fff;
+    font-size: 36px;
+}
+.content p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+}
+
+/* Countdown Timer */  
+.countdown-timer{
+    text-align: center;
+    display: flex;
+    margin: auto;
+    padding-top: 17%;
+    width: 1070px;
+}
+.timer{
+    width: 330px;
+    margin: 0 auto;
+    height: 110px;
+}
+.countdown-container{
+    display:flex;
+}
+.big-text{
+    font-size:4rem;
+    font-family: cursive;
+}
+ 
+.wrapper{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-wrap: wrap;
+}
+.countdown-container > div{
+    margin:0 2rem;
+    text-align: center;
+    border:2px solid #00dcff;
+    padding:0px 20px;
+    border-radius: 12px;
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.5);
+    box-sizing: border-box;
+    color:#fff;
+    min-width:150px;
+}
+.countdown-container span{
+    background: #00215282;
+    padding: 14px;
+    border: 1px solid #00dcff;
+    border-radius: 8px;
+    color: white;
+    font-weight: 600;
+}
+  @media (max-width:992px){
+    .countdown-container > div{
+      margin:0 1rem;
+    }
+  }
+  @media (max-width:767px){
+    .countdown-container{
+      flex-wrap: wrap;
+    }
+    .countdown-container > div{
+      margin:1rem auto;
+      max-width:150px;
+    }
+    .title{
+      font-size: 1.5rem;
+      line-height: 3.5rem;
+      margin:10px 0px;
+    }
+    .title span{
+      font-size: 2rem;
+      letter-spacing: 1rem;
+    }
+  }
+  
+/* Buttons */  
+
+.button-wrapper{
+    display: flex;
+    margin-right: 10px;
+}
+.button-wrapper button{
+    background: transparent;
+    color: white;
+    padding: 10px 20px 14px 20px;
+    font-family: 'Roboto Serif', serif;
+    font-weight: 600;
+
+}
+
+
+/* Sidebar Offcanvas */
+#sidebarOffcanvas{
+  background: #0032bf47;
+}
+.offcanvas-body h3{
+  font-size: 25px;
+  font-family: 'Roboto Serif', serif;
+  color: #fff;
+  font-weight: 700;
+}
+.offcanvas-body p{
+  text-align: justify;
+  color: #fff;
+}
+.progress-bar{
+  background: linear-gradient(45deg, #00dcff, transparent);
+  color: #000;
+  font-weight: 600;
+}
+.wrapper-ceo img{
+  width: 30%;
+  border: 4px solid #00dcff;
+}
+</style>
 </head>
-
 <body>
-    <!-- Header section Start -->
-    <header class="top">
-        <div id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a class="active" href="index.html">Home</a>
-            <a href="index.html">About</a>
-            <a href="index.html">Login/Signup</a>
-            <a href="index.html">Gallery</a>
-        </div>
-        <!-- Nav section Start -->
-        <nav id="navbar">
-            <!-- container Start-->
+<!-- partial:index.partial.html -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<!-- Header Logo -->
+    <header>
+        <div class="header_area">
             <div class="container">
-                <!--Row Start-->
                 <div class="row">
-                    <!-- <div class="col-lg-5 col-md-5 align-self-center left-side">
-                        <p>“Organize a Digital Yoga Competition” <span>call +91 91314 56893</span></p>
-                    </div> -->
-                    <div class="col-lg-2 col-md-2 col-5 align-self-center logo">
-                        <a href="index.html"><img src="images/png/logo-no-background.png" alt="logo" class="logo"></a>
-                    </div>
-                    <div class="col-lg-5 col-md-5 col-7 align-self-center right-side">
-                        <div class="social-icons square">
-                            <!-- Page Content -->
-                            <div id="page-content-wrapper">
-                                <span class="slide-menu" onclick="openNav()"><i class="fa fa-bars" aria-hidden="true"></i></span>
-                            </div>
-                        </div>
-                        <div class="social-icons another">
-                            <i class="fa fa-facebook-official" aria-hidden="true"></i>
-                            <i class="fa fa-twitter" aria-hidden="true"></i>
-                            <i class="fa fa-pinterest" aria-hidden="true"></i>
-                            <i class="fa fa-youtube" aria-hidden="true"></i>
-                        </div>
+                    <div class="col-xl-12 d-flex justify-content-center">
+                       
+<div class="logo text-center text-white mt-4">
+    <img src="https://cgyoga.in/images/svg/logo-no-background.svg" alt="" srcset="">
+</div>
                     </div>
                 </div>
-                <!--Row Ended-->
             </div>
-            <!-- container Ended-->
-        </nav>
-        <!-- Nav section Ended -->
-        <img class="border-img" src="images/border.png" width="100%" alt="">
+        </div>
     </header>
-    <!-- Header section Ended-->
-    <!-- Banner section Start -->
-    <section class="banner-home">
-        <!-- Gradient -->
-        <div class="gradient"></div>
-        <!-- container Start-->
-        <div class="container">
-            <!--Row Start-->
-            <div class="row">
-                <div class="col-sm-12">
-                    <h1 data-aos="fade-left">Conduct Your Yogasana Sports Championship effectively!</h1>
-                    <h2 data-aos="fade-left" data-aos-delay="100">“Implement a digital approach for your yoga competition.”</h2>
-                    <p data-aos="fade-left" data-aos-delay="200"><i class="fa fa-clock-o" aria-hidden="true"></i><span>We Are open 24x7</span></p>
-                    <p data-aos="fade-left" data-aos-delay="300"><i class="fa fa-phone-square" aria-hidden="true"></i><span>Call for Special Discounts</span></p>
-                    <p data-aos="fade-left" data-aos-delay="400"><i class="fa fa-envelope" aria-hidden="true"></i><span>pinisettirameshkumar@gmail.com</span></p>
-                    <a data-aos="fade-left" data-aos-delay="500" class="btn btn-success" href="about.html" role="button">our story</a>
-                </div>
-            </div>
-            <!--Row Ended-->
-        </div>
-        <!-- container Ended-->
-    </section>
-    <!-- Banner section Ended -->
-    <!-- About section start-->
-    <section class="about">
-        <!-- container Start-->
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 col-12 heading">
-                    <img src="images/png/yoga-leaf.png" alt="">
-                    <h2>Choose Your Yogasana Sports Championship</h2>
-                    <h3>“Implement a digital approach for your yoga competition.”</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4 col-sm-12 col-12 box-1" data-aos="fade-right" data-aos-duration="400">
-                    <div class="circle event-1">
-                        <div class="gradient"></div>
-                        <div class="circle__inner">
-                            <div class="circle__wrapper">
-                                <div class="circle__content">
-                                    <h4><a href="products.html">“Upcoming Yoga Championship”</a></h4>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-12 col-12 box-2" data-aos="fade-up" data-aos-duration="400">
-                    <div class="circle event-2">
-                        <div class="gradient"></div>
-                        <div class="circle__inner">
-                            <div class="circle__wrapper">
-                                <div class="circle__content">
-                                    <h4><a href="products.html">“Upcoming Yoga Championship”</a></h4>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-12 col-12 box-3" data-aos="fade-left" data-aos-duration="400">
-                    <div class="circle event-3">
-                        <div class="gradient"></div>
-                        <div class="circle__inner">
-                            <div class="circle__wrapper">
-                                <div class="circle__content">
-                                    <h4><a href="products.html">“Upcoming Yoga Championship”</a></h4>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- container Ended-->
-    </section>
-    <!-- About section Ended-->
-    <!-- Services section start-->
-    <section class="services">
-        <!-- container-fluid Start-->
-        <div class="container-fluid">
-            <div class="row" data-aos="fade-up" data-aos-duration="400">
-                <div class="col-md-3">
-                    <figure>
-                        <img src="images/services-bg.jpg" alt="The Pulpit Rock">
-                    </figure>
-                    <div class="gradient"></div>
-                </div>
-                <div class="col-md-9 right-part">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h2>Yoga Is Good For Everyone!</h2>
-                            <h3>Good for all men, women and childrens</h3>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. a galley of type and scrambled...</p>
-                        </div>
-                        <div class="col-md-12">
-                            <div class="row">
-                                <div class="col-xl-4 col-lg-6 col-md-6 col-12 contant-part-1">
-                                    <ul>
-                                        <li><i class="fa fa-envira" aria-hidden="true"></i><span><a href="services.html">Lorem Ipsum is simply dummy text</a></span></li>
-                                        <li><i class="fa fa-envira" aria-hidden="true"></i><span><a href="services.html"> Lorem Ipsum is simply dummy text</a></span></li>
-                                        <li><i class="fa fa-envira" aria-hidden="true"></i><span><a href="services.html">Lorem Ipsum is simply dummy text</a></span> </li>
-                                        <li><i class="fa fa-envira" aria-hidden="true"></i><span><a href="services.html">Lorem Ipsum is simply dummy text</a></span></li>
-                                    </ul>
-                                </div>
-                                <div class="col-xl-4 col-lg-6 col-md-6 col-12 contant-part-2">
-                                    <ul>
-                                        <li><i class="fa fa-envira" aria-hidden="true"></i><span><a href="services.html">Lorem Ipsum is simply dummy text</a></span></li>
-                                        <li><i class="fa fa-envira" aria-hidden="true"></i><span><a href="services.html"> Lorem Ipsum is simply dummy text</a></span></li>
-                                        <li><i class="fa fa-envira" aria-hidden="true"></i><span><a href="services.html">Lorem Ipsum is simply dummy text</a></span> </li>
-                                        <li><i class="fa fa-envira" aria-hidden="true"></i><span><a href="services.html">Lorem Ipsum is simply dummy text</a></span></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 
-                </div>
-            </div>
-        </div>
-        <!-- container-fluid Ended-->
-    </section>
-    <!-- Services section Ended-->
-    <!-- Section-4 section start-->
-    <section class="section-4">
-        <!-- container-fluid Start-->
-        <div class="container-fluid">
-            <div class="row" data-aos="fade-up"  data-aos-duration="400">
-                <div class="col-md-9 right-part">
-                    <div class="row">
-                        <div class="col-md-12 heading">
-                            <h2>Control, Body & Mind!</h2>
-                            <h3>Good for all men, women and childrens</h3>
-                        </div>
-                        <div class="col-md-12">
-                            <div class="row">
-                                <div class="col-md-3 col-6">
-                                    <figure>
-                                        <img src="images/services-bg.jpg" alt="The Pulpit Rock">
-                                    </figure>
-                                </div>
-                                <div class="col-md-3 col-6">
-                                    <figure>
-                                        <img src="images/blog-1.jpg" alt="The Pulpit Rock">
-                                    </figure>
-                                </div>
-                                <div class="col-md-3 col-6">
-                                    <figure>
-                                        <img src="images/blog-2.jpg" alt="The Pulpit Rock">
-                                    </figure>
-                                </div>
-                                <div class="col-md-3 col-6">
-                                    <figure>
-                                        <img src="images/blog-3.jpg" alt="The Pulpit Rock">
-                                    </figure>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-12">
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. a galley of type and scrambled Lorem Ipsum is simply dummy typesetting industry. a galley of type and scrambled...</p>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. a galley of type and scrambled......</p>
-                            <a href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Gallery</a>
-                            <!-- <a href="#" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">book now</a> -->
-                        </div>
+    <!-- Tagline With Content -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="tagline p-4 mt-4">
+                        <h1 class="text-center">Launching Soon – Be Prepared!</h1>
                     </div>
+                    <div class="content p-4">
+                        <h3 class="text-center" style="color: orange;">Organise Your Yogasana Sports Championship With Digital Approach!</h3>
+                    </div>
+                </div>
 
+                <!-- Countdown Timer -->
+                <div class="col-xl-12">
+                    <div class="wrapper">
+                        <div class="countdown-container">
+                            <div>
+                                <p id="days" class="big-text">0</p>
+                                <span>Days</span>
+                            </div>
+                            <div>
+                                <p id="hours" class="big-text">0</p>
+                                <span>Hours</span>
+                            </div>
+                            <div>
+                                <p id="min" class="big-text">0</p>
+                                <span>Min</span>
+                            </div>
+                            <div>
+                                <p id="sec" class="big-text">0</p>
+                                <span>Sec</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-3">
-                    <figure>
-                        <img src="images/section-4-bg.jpg" alt="The Pulpit Rock">
-                    </figure>
-                    <div class="gradient"></div>
+
+                <!-- Buttons -->
+                <div class="col-xl-12 d-flex justify-content-center p-5">
+                    <div class="button-wrapper">
+                        <div class="about-btn p-2">
+                            <button class="btn btn-info" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebarOffcanvas" aria-controls="sidebarOffcanvas">About Us <i class="fa-solid fa-user"></i></button>
+                        </div>
+                        
+                        
+                        <div class="subscription-btn p-2">
+                            <button class="btn btn-info">Notify me <i class="fa-solid fa-paper-plane"></i></button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <!-- container-fluid Ended-->
     </section>
-    <!-- Section-4 section Ended-->
-    <!-- Blog section start-->
-    <section class="blog">
-        <!-- container Start-->
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 col-12 heading">
-                    <img src="images/png/yoga-leaf.png" alt="">
-                    <h2>Some useful Yoga Articles for you!</h2>
-                    <h3>Good for all men, women and childrens</h3>
-                </div>
-            </div>
-            <div class="row" data-aos="fade-up" data-aos-duration="400">
-                <div class="col-md-12 col-12">
-                    <div class="row">
-                        <div class="col-lg-6 col-md-12 col-12">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <figure>
-                                        <a href="blog_single.html"><img src="images/blog-1.jpg" class="zoom" alt="The Pulpit Rock" width="304" height="228"></a>
-                                    </figure>
-                                </div>
-                                <div class="col-md-8 inner-content">
-                                    <h4><a href="blog_single.html">Lorem Ipsum is simply dummy text type and scrambled...</a></h4>
-                                    <p><span>December 23, 2016</span>Posted by <b><a href="blog_single.html">Ramesh</a></b></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-12 col-12">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <figure>
-                                        <a href="blog_single.html"><img src="images/blog-2.jpg" alt="The Pulpit Rock" width="304" height="228"></a>
-                                    </figure>
-                                </div>
-                                <div class="col-md-8 inner-content">
-                                    <h4><a href="blog_single.html">Lorem Ipsum is simply dummy text type and scrambled...</a></h4>
-                                    <p><span>December 23, 2016</span>Posted by <b><a href="blog_single.html">Ramesh</a></b></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-12 col-12">
-                    <div class="row">
-                        <div class="col-lg-6 col-md-12 col-12">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <figure>
-                                        <a href="blog_single.html"><img src="images/blog-3.jpg" alt="The Pulpit Rock" width="304" height="228"></a>
-                                    </figure>
-                                </div>
-                                <div class="col-md-8 inner-content">
-                                    <h4><a href="blog_single.html">Lorem Ipsum is simply dummy text type and scrambled...</a></h4>
-                                    <p><span>December 23, 2016</span>Posted by <b><a href="blog_single.html">Ramesh</a></b></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-12 col-12">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <figure>
-                                        <a href="blog_single.html"><img src="images/blog-4.jpg" alt="The Pulpit Rock" width="304" height="228"></a>
-                                    </figure>
-                                </div>
-                                <div class="col-md-8 inner-content">
-                                    <h4><a href="blog_single.html">Lorem Ipsum is simply dummy text type and scrambled...</a></h4>
-                                    <p><span>December 23, 2016</span>Posted by <b><a href="blog_single.html">Ramesh</a></b></p>
-                                    <p></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12 col-12 button">
-                    <a class="btn btn-success" href="blog-page.html" role="button">Gallery</a>
-                </div>
-            </div>
-        </div>
-        <!-- container Ended-->
-    </section>
-    <!-- Blog section Ended-->
-    <!-- Footer section start-->
-    <footer class="contact">
-        <!-- Gradient -->
-        <div class="gradient"></div>
-        <!-- container Start-->
-        <div class="container">
-            <div class="row" data-aos="fade-up" data-aos-duration="400">
-                <div class="col-lg-6 col-md-12 col-12 columns-1">
-                    <h2>Our Address</h2>
-                    <address>
-                    <p>53/E, Street-16 Sector-2</p>
-                    <p>Bhilai, Durg Chhattisgarh India</p>
-                    <p>Opening Hours : Mo-Fr 11:00-00:00, Sa-Su 15:00-00:00</p>
-                    <p>Call for Bookings : <span>+91 9131456839</span></p>
-                   </address>
-                </div>
-                <div class="col-lg-1 col-md-12 col-12"></div>
-                <div class="col-lg-5 col-md-12 col-12 columns-2">
-                    <h2>Quick Contact</h2>
-                    <form class="row form-inline">
-                        <div class="col-md-6 form-group">
-                            <input type="text" class="form-control" placeholder="Your Name" required/>
-                        </div>
-                        <div class="col-md-6 form-group">
-                            <input type="email" class="form-control" placeholder="Your Email" required/>
-                        </div>
-                        <div class="col-md-12 form-group">
-                            <textarea class="form-control" placeholder="Message" rows="5" cols="70"></textarea>
-                        </div>
-                        <div class="col-md-12">
-                            <button type="submit" class="btn btn-primary">Submit</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-        <!-- container Ended-->
-        <div class="copyright">
-            <div class="container">
-                <div class="row border-img">
-                    <div class="col-md-12">
-                        <img src="images/border.png" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row" data-aos="fade-up" data-aos-duration="400">
-                    <div class="col-lg-3 col-md-12">
-                        <a href="index.html"><img src="images/png/logo-no-background.png" alt="logo" class="logo"></a>
-                    </div>
-                    <div class="col-lg-9 col-md-12 right-part">
-                        <ul class="ml-auto">
-                            <li class="nav-item active">
-                                <a class="nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a>
-                            </li>
-                            <li><a class="hidden-xs">~</a></li>
-                            <li class="nav-item"><a class="nav-link" href="index.html">About</a></li>
-                            <li><a class="hidden-xs">~</a></li>
-                            <li class="nav-item"><a class="nav-link" href="index.html">Login/Signup </a></li>
-                            <li><a class="hidden-xs">~</a></li>
-                            <li class="nav-item"><a class="nav-link" href="index.html">Gallery</a></li>
-                        </ul>
-                        <p>(C) 2017 All Rights Reserved. Designed by <a href="https://cgyoga.in/" target="_blank">P Ramesh Kumar</a></p>
-                    </div>
-                </div>
-            </div>
+
+    <!-- Social Icons -->
+    <footer class="text-center text-white">
+        <div class="container p-4">
+                <!-- Facebook -->
+                <a class="btn btn-outline-info btn-floating text-white m-1" href="#!" role="button"
+                    ><i class="fab fa-facebook-f"></i
+                ></a>
+
+                <!-- Twitter -->
+                <a class="btn btn-outline-info btn-floating text-white m-1" href="#!" role="button"
+                    ><i class="fab fa-twitter"></i
+                ></a>
+
+                <!-- Google -->
+                <a class="btn btn-outline-info btn-floating text-white m-1" href="#!" role="button"
+                    ><i class="fab fa-google"></i
+                ></a>
+
+                <!-- Instagram -->
+                <a class="btn btn-outline-info btn-floating text-white m-1" href="#!" role="button"
+                    ><i class="fab fa-instagram"></i
+                ></a>
+
+                <!-- Linkedin -->
+                <a class="btn btn-outline-info btn-floating text-white m-1" href="#!" role="button"
+                    ><i class="fab fa-linkedin-in"></i
+                ></a>
+
+                <!-- Github -->
+                <a class="btn btn-outline-info btn-floating text-white m-1" href="#!" role="button"
+                    ><i class="fab fa-github"></i
+                ></a>
         </div>
     </footer>
-    <!-- Footer section Ended-->
-    <!-- Return to Top -->
-    <a href="javascript:" id="return-to-top"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
+<!-- partial -->
+<script>
+    let daysItem = document.querySelector("#days");
+    let hoursItem = document.querySelector("#hours");
+    let minItem = document.querySelector("#min");
+    let secItem = document.querySelector("#sec");
 
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <!-- Custom JavaScript -->
-    <script src="js/animate.js"></script>
-    <script src="js/custom.js"></script>
+
+let countDown = () => {
+  let futureDate = new Date("1 Jan 2030");
+  let currentDate = new Date();
+  let myDate = futureDate - currentDate;
+  //console.log(myDate);
+
+  let days = Math.floor(myDate / 1000 / 60 / 60 / 24);
+
+  let hours = Math.floor(myDate / 1000 / 60 / 60) % 24;
+
+  let min = Math.floor(myDate / 1000 / 60) % 60;
+
+  let sec = Math.floor(myDate / 1000) % 60;
+
+  daysItem.innerHTML = days;
+  hoursItem.innerHTML = hours;
+  minItem.innerHTML = min;
+  secItem.innerHTML = sec;
+}
+
+countDown();
+
+setInterval(countDown, 1000);
+</script>
+  <!-- <script  src="./script.js"></script> -->
+
 </body>
-
 </html>
